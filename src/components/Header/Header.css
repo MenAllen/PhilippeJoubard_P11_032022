@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 100px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.logo {
+  width: 210px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 24px;
+  padding: 0 30px 0 30px;
+}
+
+.active {
+  text-decoration: underline;
+}
