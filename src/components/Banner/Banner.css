@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-image: url("../../assets/accueil.jpg");
+  background-repeat: no-repeat;
+  max-width: 1240px;
+  height: 223px;
+  margin: 40px 100px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+}

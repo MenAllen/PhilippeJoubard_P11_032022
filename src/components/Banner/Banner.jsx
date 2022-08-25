@@ -1,9 +1,10 @@
-import accueil from "../../assets/accueil.jpg";
+
+import "./Banner.css"
 
 function Banner() {
 	return (
 		<div className="banner">
-			<img src={accueil} alt="Banner d'accueil"></img>
+      <h1>Chez vous, partout et ailleurs</h1>
 		</div>
 	);
 }

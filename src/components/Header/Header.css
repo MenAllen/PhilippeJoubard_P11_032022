@@ -1,13 +1,13 @@
-.header {
+.header-nav {
   display: flex;
   justify-content: space-between;
   margin: 40px 100px;
 }
 
-.header-nav {
+.header-nav div {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo {

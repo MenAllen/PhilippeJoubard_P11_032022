@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import './index.css'
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import Accueil from "./pages/Accueil/index"
-import Logements from "./pages/Logements/index"
-import Apropos from "./pages/Apropos/index"
-import Error from "./pages/Error/index"
+import Error from "./components/Error/Error"
+import Accueil from "./pages/Accueil"
+import Logements from "./pages/Logements"
+import Apropos from "./pages/Apropos"
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,7 +19,7 @@ root.render(
 				<Route exact path="/" element={<Accueil />} />
 				<Route path="/logements" element={<Logements />} />
 				<Route path="/about" element={<Apropos />} />
-				<Route path="/error" element={<Error />} />
+				<Route path="/*" element={<Error />} />
 			</Routes>
 			<Footer />
 		</Router>
