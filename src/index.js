@@ -6,7 +6,7 @@ import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Error from "./components/Error/Error"
 import Accueil from "./pages/Accueil"
-import Logements from "./pages/Logements"
+import Logement from "./pages/Logement"
 import Apropos from "./pages/Apropos"
 
 
@@ -17,7 +17,7 @@ root.render(
 			<Header />
 			<Routes>
 				<Route exact path="/" element={<Accueil />} />
-				<Route path="/logements" element={<Logements />} />
+				<Route path="/logement/:userId" element={<Logement />} />
 				<Route path="/about" element={<Apropos />} />
 				<Route path="/*" element={<Error />} />
 			</Routes>

@@ -1,65 +1,42 @@
-import { useState,  useEffect } from "react"
+import React from "react"
 import styled from 'styled-components'
 import Banner from "../components/Banner/Banner"
+import { Loader } from "../utils/style/Atoms"
 import Card from "../components/Card/Card"
+import { useFetch } from "../utils/hooks"
 
 const LocationContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1240px;
   background-color: #F6F6F6;
-  margin: 40px 100px;
+  margin: 40px 35px;
+  padding: 20px 0;
   border-radius: 25px;
 `
 
 function Accueil () {
-  const [locationData, setLocationData] = useState([]);
-  const [error, setError] = useState(false);
 
-//  useEffect(() => {
-//    setDataLoading(true);
-//    fetch("./public/data.json")
-//         .then((response) => response.json())
-//         .then(({ locationData }) => {
-//          setLocationData(locationData)
-//          console.log("useEffect")
-//          setDataLoading(false)
-//        })
-//        .catch((error) => setError(true))
-//  }, [])
-
-  useEffect(() => {
-    async function fetchLocation () {
-//      setDataLoading(true);
-      try {
-        const response = await fetch('./data/location.json');
-        const { locationData } = await response.json();
-        setLocationData(locationData);
-      } catch (err) {
-        console.log(err);
-        setError(true);
-      } finally {
-//        setDataLoading(false);
-      }
-    }
-    fetchLocation()
-  }, [])
+  const { data, isLoading, error } = useFetch("/data/location.json");
 
   if (error) {
     return <span>Oups il y a eu un problème</span>
   }
 
   return (
-    <div>
+    <React.Fragment>
       <Banner />
+      { isLoading ? (
+        <Loader />
+      ) : (
       <LocationContainer>
-        {locationData.map((location) => (
+        {data.map((location) => (
           <Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
         ))}
-      </LocationContainer>
-    </div>
+      </LocationContainer> ) }
+    </React.Fragment>
   )
 }
 

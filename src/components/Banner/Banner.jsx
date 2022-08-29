@@ -1,6 +1,11 @@
 
 import "./Banner.css"
 
+/**
+ * 
+ * @returns 
+ */
+
 function Banner() {
 	return (
 		<div className="banner">

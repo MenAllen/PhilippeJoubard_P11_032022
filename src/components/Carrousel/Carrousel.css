@@ -1,0 +1,38 @@
+.carrousel {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 40px 35px;
+}
+
+.picture {
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.previous {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  left: 15px;
+}
+
+.next {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  right: 15px;
+}
+
+.carrousel p {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  z-index: 10;
+  bottom: 5px;
+}
