@@ -1,0 +1,68 @@
+.pitch-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 25px;
+  margin: 40px 46px;
+}
+
+.caracteristics h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.caracteristics p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.tagsList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tagsList p {
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 115px;
+  padding: 5px 10px;
+  margin: 0 5px 0 0;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profil {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil p {
+  align-self: center;
+  max-width: 50px;
+  margin: 0;
+}
+
+.profil img {
+  border-radius: 50%;
+  width: 64px;
+  height: auto;
+}
+
+.rating {
+  margin-top: 30px;
+}
+

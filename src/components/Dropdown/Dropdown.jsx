@@ -1,6 +1,30 @@
-function Dropdown () {
+import { useState } from "react";
+import "./Dropdown.css";
+
+/**
+ * 
+ * @param {string} page
+ * @param {string} titre
+ * @param {string ou array} contenu
+ * @returns 
+ */
+function Dropdown ({ page, titre, contenu }) {
+
+  /* gestion du menu déroulant au click par le state openState */
+  let [ openState, setOpenState ] = useState(false)
+
+  function changeState() {
+    openState === false ? setOpenState(true) :  setOpenState(false);
+  }
+
+  /* gestion de l'affichage du contenu suivant le type de contenu string ou non */
   return (
-      <div>404</div>
+      <article className={ page === 'logement' ? 'bloc-accueil' : 'bloc-apropos'}>
+        <summary className="titre" onClick={changeState}>{titre} <i className={openState === false ? "fa fa-chevron-up" : "fa fa-chevron-down" } /></summary>
+        <div className={ openState === false ? 'contenu hidden' : 'contenu' }>
+          {typeof(contenu) === 'string' ? (<p>{contenu}</p>) : (contenu.map((elt, index) => (<p key={index}>{elt}</p>)))}
+        </div>
+      </article>
   )
 }
 

@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
 	return (
 		<footer>
-			<img src={whitelogo} alt="logo blanc du site Kasa"></img>
+			<img src={whitelogo} alt="logo blanc du site Kasa" />
 			<p> © 2020 Kasa. All rights reserved</p>
 		</footer>
 	);

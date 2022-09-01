@@ -11,7 +11,7 @@ import "./Card.css"
 function Card ({id, title, cover}) {
 
   return (
-    <Link to={"./logement/" + id}>
+    <Link to={`./logement/${id}`}>
       <figure>
         <img src={cover} alt="location" />
         <figcaption> {title} </figcaption>

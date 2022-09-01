@@ -7,21 +7,33 @@ import "./Carrousel.css";
  * 
  * @param {Array} pictures
  * @param {String} title
- * @returns 
+ * @returns affichage section carrousel
  */
 
-function Carrousel ({ pictures, title }) {
+function Carrousel ({ images, titre }) {
+
+	/* initialisation du hook d'état associé à l'index dans la table pictures */
 	let [id, setId] = useState(0);
-	function next () { (id === pictures.length - 1) ? setId(0) : setId(id+1); }
-	function previous () { (id === 0) ? setId(pictures.length-1) : setId(id-1); }
+
+	/* S'il n'y a qu'une seule image, on masque les flèches de navigation */
+	let classStringPrevious = 'previous';
+	let classStringNext = 'next';
+  if (images.length === 1) {
+    classStringPrevious += ' hidden';
+		classStringNext += ' hidden'
+  }
+
+	/* fonctions associées aux flèches de navigation du carrousel */
+	function next () { (id === images.length - 1) ? setId(0) : setId(id+1); }
+	function previous () { (id === 0) ? setId(images.length-1) : setId(id-1); }
 
 	return (
-		<div className="carrousel">
-			<img src={previousIcon} className="previous" onClick={previous} alt="précédente" />
-			<img src={pictures[id]} className="picture" alt={title} />
-			<p>{id+1}/{pictures.length}</p>
-			<img src={nextIcon} className="next" onClick={next} alt="suivante" />
-		</div>
+		<section className="carrousel-container">
+			<img src={previousIcon} className={classStringPrevious} onClick={previous} alt="précédente" />
+			<img src={images[id]} className="picture" alt={titre} />
+			<p>{id+1}/{images.length}</p>
+			<img src={nextIcon} className={classStringNext} onClick={next} alt="suivante" />
+		</section>
 	)
 }
 

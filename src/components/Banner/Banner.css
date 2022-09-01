@@ -1,17 +1,26 @@
 .banner {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
-  background-image: url("../../assets/accueil.jpg");
+  border-radius: 25px; 
   background-repeat: no-repeat;
-  max-width: 1240px;
+  margin-bottom: 15px;
+}
+
+.banner img {
+  object-fit: cover;
+  align-self: center;
+  border-radius: 25px;
+  width: 92%;
   height: 223px;
-  margin: 40px 35px;
 }
 
 .banner h1 {
   color: white;
+  z-index: 10;
+  position: absolute;
+  left: 25%;
   font-size: 48px;
   font-weight: 500;
 }

@@ -1,10 +1,10 @@
-.carrousel {
+.carrousel-container {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  margin: 40px 35px;
+  margin: 40px 46px;
 }
 
 .picture {
@@ -28,7 +28,11 @@
   right: 15px;
 }
 
-.carrousel p {
+.hidden {
+  display: none;
+}
+
+.carrousel-container p {
   position: absolute;
   font-size: 18px;
   font-weight: 500;
