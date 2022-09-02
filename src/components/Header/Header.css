@@ -35,4 +35,17 @@ header nav [aria-current] {
   height: auto;
 }
 
+/* =========================================================================================== */
+@media screen and (max-width: 960px) {
+
+  header nav a {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 130;
+    height: auto;
+  }
+}
+
 
