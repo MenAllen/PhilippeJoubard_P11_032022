@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/PhilippeJoubard_P11_032022/static/css/main.b5944962.css",
-    "main.js": "/PhilippeJoubard_P11_032022/static/js/main.b5e6daba.js",
-    "static/media/apropos.jpg": "/PhilippeJoubard_P11_032022/static/media/apropos.a1e8244bcb0ab22106b9.jpg",
-    "static/media/accueil.jpg": "/PhilippeJoubard_P11_032022/static/media/accueil.0b98a19db1cbd8c3585d.jpg",
-    "static/media/logo.jpg": "/PhilippeJoubard_P11_032022/static/media/logo.b6369e8f55cb53003c19.jpg",
-    "static/media/whitelogo.svg": "/PhilippeJoubard_P11_032022/static/media/whitelogo.ee689fd9409d1b5a898b4247819d8a00.svg",
-    "index.html": "/PhilippeJoubard_P11_032022/index.html",
-    "static/media/next.svg": "/PhilippeJoubard_P11_032022/static/media/next.88153a5d119c2744ffe34dca1ef843df.svg",
-    "static/media/previous.svg": "/PhilippeJoubard_P11_032022/static/media/previous.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "static/media/emptyStar.svg": "/PhilippeJoubard_P11_032022/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
-    "static/media/filledStar.svg": "/PhilippeJoubard_P11_032022/static/media/filledStar.6430150c126a3adf92c132c52c9c7428.svg",
-    "main.b5944962.css.map": "/PhilippeJoubard_P11_032022/static/css/main.b5944962.css.map",
-    "main.b5e6daba.js.map": "/PhilippeJoubard_P11_032022/static/js/main.b5e6daba.js.map"
+    "main.css": "/static/css/main.1d0a2027.css",
+    "main.js": "/static/js/main.0a074295.js",
+    "static/media/apropos.jpg": "/static/media/apropos.a1e8244bcb0ab22106b9.jpg",
+    "static/media/accueil.jpg": "/static/media/accueil.0b98a19db1cbd8c3585d.jpg",
+    "static/media/logo.jpg": "/static/media/logo.b6369e8f55cb53003c19.jpg",
+    "static/media/whitelogo.svg": "/static/media/whitelogo.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/index.html",
+    "static/media/next.svg": "/static/media/next.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/previous.svg": "/static/media/previous.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/emptyStar.svg": "/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/filledStar.svg": "/static/media/filledStar.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.1d0a2027.css.map": "/static/css/main.1d0a2027.css.map",
+    "main.0a074295.js.map": "/static/js/main.0a074295.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5944962.css",
-    "static/js/main.b5e6daba.js"
+    "static/css/main.1d0a2027.css",
+    "static/js/main.0a074295.js"
   ]
 }
