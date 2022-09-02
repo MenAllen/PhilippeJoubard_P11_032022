@@ -39,3 +39,25 @@
 .hidden {
   display: none;
 }
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+
+  .bloc-apropos, .bloc-accueil {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .titre {
+    font-size: 13px;
+    height: 30px;
+  }
+
+  .contenu p {
+    font-size: 12px;
+  }
+
+  .contenu {
+    padding: 20px 10px;
+  }
+}

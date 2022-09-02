@@ -9,11 +9,16 @@ const LocationContainer = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	max-width: 1240px;
 	background-color: #f6f6f6;
 	margin: 40px 55px;
 	padding: 20px 0;
 	border-radius: 25px;
+
+  @media screen and (max-width: 780px) {
+    margin: 20px 20px;
+    padding: 0;
+    background-color: #ffffff;
+  }
 `;
 
 /**

@@ -1,6 +1,6 @@
 .carrousel-container {
   display: flex;
-  position: relative;
+  position: relative;  
   justify-content: center;
   align-items: center;
   border-radius: 25px;
@@ -18,14 +18,14 @@
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  left: 15px;
+  left: 5%;
 }
 
 .next {
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  right: 15px;
+  right: 5%;
 }
 
 .hidden {
@@ -39,4 +39,36 @@
   color: white;
   z-index: 10;
   bottom: 5px;
+}
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+
+  .carrousel-container {
+    margin: 10px 10px;
+  }
+
+  .picture {
+    width: 92%;
+    min-width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .previous {
+    width: 12px;
+    height: 20px;
+    left: 5%;
+  }
+  
+  .next {
+    width: 12px;
+    height: 20px;
+    right: 5%;
+  }
+
+  .carrousel-container p {
+    display: none;
+  }
 }

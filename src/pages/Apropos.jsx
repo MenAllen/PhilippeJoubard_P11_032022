@@ -11,6 +11,10 @@ const AproposContainer = styled.div`
   justify-content: space-around;
 	max-width: 1240px;
   margin: 0 55px 60px 55px;
+
+  @media screen and (max-width: 780px) {
+    margin: 0 10px 40px 10px;
+  }
 `;
 
 /**

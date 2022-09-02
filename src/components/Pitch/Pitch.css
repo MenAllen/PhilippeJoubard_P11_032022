@@ -1,10 +1,15 @@
 .pitch-container {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   justify-content: space-between;
   align-items: flex-start;
   border-radius: 25px;
   margin: 40px 55px;
+}
+
+.caracteristics {
+  padding-bottom: 15px;
 }
 
 .caracteristics h1 {
@@ -22,6 +27,7 @@
 .tagsList {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 20px;
 }
@@ -36,7 +42,7 @@
   font-weight: 500;
   min-width: 115px;
   padding: 5px 10px;
-  margin: 0 5px 0 0;
+  margin: 0 5px 5px 0;
 }
 
 .owner {
@@ -51,6 +57,8 @@
 }
 
 .profil p {
+  font-size: 18px;
+  font-weight: 500;
   align-self: center;
   max-width: 50px;
   margin: 0;
@@ -64,5 +72,57 @@
 
 .rating {
   margin-top: 30px;
+}
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+
+  .pitch-container {
+    margin: 20px 20px;
+    row-gap: 5px;
+  }  
+
+  .caracteristics h1 {
+    font-size: 18px;
+  }
+
+  .caracteristics p {
+    font-size: 14px;
+  }
+
+  .tagsList {
+    margin-top: 0;
+  }
+
+  .tagsList p {
+    font-size: 10px;
+    min-width: 80px;
+  }
+
+  .owner {
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rating {
+    margin-top: 0;
+  }
+
+  .rating img {
+    width: 15px;
+  }
+
+  .profil p {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .profil img {
+    width: 32px;
+    height: 32px;
+  }
+
 }
 
