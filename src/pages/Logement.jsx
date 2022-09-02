@@ -10,12 +10,12 @@ const LogementContainer = styled.div`
 	display: flex;
 	flex-direction: row;
   justify-content: space-between;
-  margin: 40px 46px;
+  margin: 40px 55px;
 `;
 
 /**
  * 
- * @returns Affichage page détaillée d'un logement
+ * @returns Affichage détaillé d'un logement : carroussel, points forts (tags), avis
  */
 function Logement() {
 	const { userId } = useParams();

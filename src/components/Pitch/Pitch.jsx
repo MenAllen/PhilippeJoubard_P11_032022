@@ -4,11 +4,10 @@ import filledStar from "../../assets/filledStar.svg"
 
 /**
  * 
- * @param {object} logement 
+ * @param {object} logement sélectionné du tableau json 
  * @returns affichage section pitch du logement
  */
 function Pitch({ logement }) {
-
 
   /* initialisation de la table de rating */
   const ratingTab = [];

@@ -5,8 +5,8 @@ import "./Carrousel.css";
 
 /**
  * 
- * @param {Array} pictures
- * @param {String} title
+ * @param {Array} images
+ * @param {String} titre
  * @returns affichage section carrousel
  */
 

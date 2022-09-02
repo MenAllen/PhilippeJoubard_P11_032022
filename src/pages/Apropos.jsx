@@ -15,7 +15,7 @@ const AproposContainer = styled.div`
 
 /**
  * 
- * @returns 
+ * @returns Pahe A propos: bannière et engagements de l'agence
  */
 function Apropos () {
 

@@ -1,16 +1,16 @@
-.header-nav {
+header {
   display: flex;
   justify-content: space-between;
   margin: 40px 55px;
 }
 
-.header-nav div {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.header-nav a, .header-nav div a {
+header a {
   text-decoration: none;
   color: #FF6060;
   font-size: 24px;
@@ -18,11 +18,15 @@
   padding: 0;
 }
 
-.header-nav div a {
+header nav a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 24px;
+  font-weight: 500;
   padding: 0 0 0 30px;
 }
 
-.header-nav div [aria-current] {
+header nav [aria-current] {
   text-decoration: underline;
 }
 

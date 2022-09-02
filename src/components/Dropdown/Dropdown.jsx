@@ -6,18 +6,18 @@ import "./Dropdown.css";
  * @param {string} page
  * @param {string} titre
  * @param {string ou array} contenu
- * @returns 
+ * @returns Affichage d'un article déroulant
  */
 function Dropdown ({ page, titre, contenu }) {
 
-  /* gestion du menu déroulant au click par le state openState */
+  /* gestion de l'article déroulant au click par le state openState */
   let [ openState, setOpenState ] = useState(false)
 
   function changeState() {
     openState === false ? setOpenState(true) :  setOpenState(false);
   }
 
-  /* gestion de l'affichage du contenu suivant le type de contenu string ou non */
+  /* gestion de l'affichage du contenu suivant le type string ou non */
   return (
       <article className={ page === 'logement' ? 'bloc-accueil' : 'bloc-apropos'}>
         <summary className="titre" onClick={changeState}>{titre} <i className={openState === false ? "fa fa-chevron-up" : "fa fa-chevron-down" } /></summary>

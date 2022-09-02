@@ -4,10 +4,11 @@ import "./Card.css"
 
 /**
  * 
- * @param {object} { id, title, cover }
- * @returns 
+ * @param {string} id du logement
+ * @param {string} titre
+ * @param {string} photo de couverture
+ * @returns Affichage de la carte du logement
  */
-
 function Card ({id, title, cover}) {
 
   return (

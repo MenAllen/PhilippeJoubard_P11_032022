@@ -1,6 +1,10 @@
 import whitelogo from "../../assets/whitelogo.svg";
 import "./Footer.css"
 
+/**
+ * 
+ * @returns Affichage footer avec logo blanc
+ */
 function Footer() {
 	return (
 		<footer>

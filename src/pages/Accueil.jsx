@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Banner from "../components/Banner/Banner";
-import Loader from "../components/Loader/Loader";
 import Card from "../components/Card/Card";
 import { useFetch } from "../utils/hooks";
 
@@ -19,7 +18,7 @@ const LocationContainer = styled.div`
 
 /**
  *
- * @returns
+ * @returns Page d'accueil : bannière et cartes des 20 logements
  */
 function Accueil() {
 	const { locationList, isLoading, error } = useFetch("/data/location.json");
@@ -28,19 +27,18 @@ function Accueil() {
 		return <span>Oups il y a eu un problème</span>;
 	}
 
-	return (  
-    <React.Fragment>
-      <Banner page='Accueil' texte='Chez vous, partout et ailleurs'/>
-      { isLoading ? (
-        <Loader />
-      ) : (
-        <LocationContainer>
-          {locationList.map((location) => (
-            <Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
-          ))}
-        </LocationContainer> ) }
-    </React.Fragment>
-	);
+	if (!isLoading) {
+		return (
+			<React.Fragment>
+				<Banner page="Accueil" texte="Chez vous, partout et ailleurs" />
+				<LocationContainer>
+					{locationList.map((location) => (
+						<Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
+					))}
+				</LocationContainer>
+			</React.Fragment>
+		);
+	}
 }
 
 export default Accueil;
