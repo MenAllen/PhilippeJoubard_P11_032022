@@ -9,7 +9,9 @@ import Accueil from "./pages/Accueil"
 import Logement from "./pages/Logement"
 import Apropos from "./pages/Apropos"
 
-
+/**
+ * Routes de l'application
+ */
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
