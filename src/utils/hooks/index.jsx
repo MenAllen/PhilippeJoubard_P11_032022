@@ -4,6 +4,8 @@ export function useFetch(url) {
 	const [locationList, setLocationList] = useState([]);
 	const [isLoading, setLoading] = useState(true);
 	const [error, setError] = useState(false);
+
+	console.log(url);
 	
 	useEffect(() => {
 		if (!url) return;
@@ -11,8 +13,8 @@ export function useFetch(url) {
 		async function fetchData() {
 			try {
 				const response = await fetch(url);
-				const data = await response.json();
-				setLocationList(data);
+				const { locationData } = await response.json();
+				setLocationList(locationData);
 				setLoading(false);
 			} catch (err) {
 				console.log(err);
