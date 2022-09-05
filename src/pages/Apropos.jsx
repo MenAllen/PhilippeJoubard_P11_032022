@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Banner from "../components/Banner/Banner";
 import Dropdown from "../components/Dropdown/Dropdown";
 
+/* Définition du style du className AproposContainer */
 const AproposContainer = styled.div`
 	display: flex;
 	flex-direction: column;

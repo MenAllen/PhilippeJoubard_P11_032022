@@ -4,6 +4,7 @@ import Banner from "../components/Banner/Banner";
 import Card from "../components/Card/Card";
 import { useFetch } from "../utils/hooks";
 
+/* Définition du style du className LocationContainer */
 const LocationContainer = styled.div`
 	display: flex;
 	flex-direction: row;

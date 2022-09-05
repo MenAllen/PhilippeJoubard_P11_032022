@@ -10,7 +10,7 @@ import Logement from "./pages/Logement"
 import Apropos from "./pages/Apropos"
 
 /**
- * Routes de l'application
+ * Main avec Routes de l'application et Appel des Pages
  */
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

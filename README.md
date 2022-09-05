@@ -1,25 +1,32 @@
-# Getting Started with Create React App
+# Base de code du projet P11 - Parcours Front-end - React
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Le site de l'agence Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Une refonte totale est décidée pour passer à une stack complète en JavaScript avec React côté Front-end.Il s'agit donc, sur la base des maquettes desktop et mobile fournies, de réaliser une app React Kasa qui présente:
+ - Une page d'accueil présentant une liste de 20 logements. Chaque logement est cliquable et peut être vu de façon détaillée
+ - Une page A propos décrivant les valeurs de l'agence
 
-Projet initié avec [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+ - git clone https://github.com/MenAllen/PhilippeJoubard_P11_032022.git
+ - npm install pour installer l'application
+ - npm start pour lancer l'application qui s'affiche sous localhost:3000
 
-## Available Scripts
+## Page netlify
+Une page netlify est disponible sous : https://stellular-marshmallow-ca39e0.netlify.app/
 
-In the project directory, you can run:
+## Inputs
+ - Maquettes FIGMA Desktop et Mobile
+ - Tableau JSON de 20 appartements avec description photos, points forts et rating
 
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Code
+ - Main App: src\index.js qui inclue le routage vers les différentes pages
+ - Pages: src\pages\Accueil.jsx, Apropos.jsx et Logements.jsx
+ - Composants: src\components\Banner, Card, Carrousel, Dropdown, Error, Footer, Header, Pitch (jsx et css)
 
-### `npm test`
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Outils utilisés
+ - React Create App
+ - HTML, CSS, Javascript
+ - ESlint Linter
+ - Prettier Code formateur
+ - Styled-Components
+ - P42 code analyseur et amelioreur
 
-### `npm run build`
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `npm run eject`
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
+## Livraisons
+ - Livraison 12: Suppression des fichiers non utilisés

@@ -6,6 +6,7 @@ import Carrousel from "../components/Carrousel/Carrousel";
 import Pitch from "../components/Pitch/Pitch";
 import Dropdown from "../components/Dropdown/Dropdown";
 
+/* Définition du style du className LogementContainer */
 const LogementContainer = styled.div`
 	display: flex;
 	flex-direction: row;
@@ -20,7 +21,7 @@ const LogementContainer = styled.div`
 
 /**
  * 
- * @returns Affichage détaillé d'un logement : carroussel, points forts (tags), avis
+ * @returns Affichage détaillé d'un logement : carroussel, points forts (tags), avis, ...
  */
 function Logement() {
 	const { userId } = useParams();
