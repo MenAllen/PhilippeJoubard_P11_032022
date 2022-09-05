@@ -20,7 +20,7 @@ const LocationContainer = styled.div`
     padding: 0;
     background-color: #ffffff;
   }
-`;
+`
 
 /**
  *
