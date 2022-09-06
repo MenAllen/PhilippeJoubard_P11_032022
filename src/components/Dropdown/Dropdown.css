@@ -4,7 +4,7 @@
 }
 
 .bloc-apropos {
-  width: 78%;
+  width:82%;
   flex-direction: column;
   margin: 15px;
 }
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 10px; 
   position: relative;
   cursor: pointer;
 }
@@ -43,9 +43,14 @@
 /* =========================================================================================== */
 @media screen and (max-width: 780px) {
 
-  .bloc-apropos, .bloc-accueil {
-    width: 95%;
-    margin: 10px;
+  .bloc-accueil {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .bloc-apropos {
+    width: 90%;
+    margin: 10px 20px;
   }
 
   .titre {

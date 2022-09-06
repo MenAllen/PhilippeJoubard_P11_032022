@@ -11,12 +11,13 @@ const LocationContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: #f6f6f6;
-	margin: 40px 55px;
 	padding: 20px 0;
 	border-radius: 25px;
+	margin: 40px 7%;
+	width: 86%;
 
   @media screen and (max-width: 780px) {
-    margin: 20px 20px;
+		margin: 20px 7%;
     padding: 0;
     background-color: #ffffff;
   }

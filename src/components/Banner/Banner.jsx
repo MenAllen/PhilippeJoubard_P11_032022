@@ -12,8 +12,8 @@ import "./Banner.css"
 function Banner({page, texte}) {
 
 	return (
-		<div className="banner">
-			<img src={ page === 'Accueil' ? bannerAccueil : bannerApropos } alt="bannière"/>
+		<div className="banner" >
+			<img src={ page === 'Accueil' ? bannerAccueil : bannerApropos } className={ page === 'Apropos' ? "imgApropos" : "imgAccueil" }alt="bannière"/>
       <h1>{texte}</h1>
 		</div>
 	);

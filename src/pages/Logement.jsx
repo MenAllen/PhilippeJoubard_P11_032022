@@ -11,11 +11,12 @@ const LogementContainer = styled.div`
 	display: flex;
 	flex-direction: row;
   justify-content: space-between;
-  margin: 40px 55px;
-
+	margin: 40px 7%;
+	width: 86%;
+	
 	@media screen and (max-width: 780px) {
 		flex-direction: column;
-		margin: 10px 10px 40px 10px;;
+		margin: 10px 7% 40px 7%px;;
   }
 `;
 

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  margin: 40px 55px;
+  margin: 40px 7%;
 }
 
 .picture {
@@ -18,14 +18,14 @@
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  left: 5%;
+  left: 4%;
 }
 
 .next {
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  right: 5%;
+  right: 4%;
 }
 
 .hidden {
@@ -45,11 +45,11 @@
 @media screen and (max-width: 780px) {
 
   .carrousel-container {
-    margin: 10px 10px;
+    margin: 10px 7%;
   }
 
   .picture {
-    width: 92%;
+    width: 98%;
     min-width: 335px;
     height: 255px;
     border-radius: 10px;
