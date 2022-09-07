@@ -1,58 +1,55 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 7%;
-  width: 86%;
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 7%;
+	width: 86%;
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 header a {
-  text-decoration: none;
-  color: #FF6060;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 0;
+	text-decoration: none;
+	color: #ff6060;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 0;
 }
 
 header nav a {
-  text-decoration: none;
-  color: #FF6060;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 0 0 0 30px;
+	text-decoration: none;
+	color: #ff6060;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 0 0 0 30px;
 }
 
 header nav [aria-current] {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .logo {
-  width: 210px;
-  height: auto;
+	width: 210px;
+	height: auto;
 }
 
 /* =========================================================================================== */
 @media screen and (max-width: 780px) {
+	header {
+		margin: 20px 7%;
+	}
 
-  header {
-    margin: 20px 7%;
-  }
+	header nav a {
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 0 0 0 15px;
+	}
 
-  header nav a {
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 0 0 0 15px;
-  }
-
-  .logo {
-    width: 130px;
-    height: auto;
-  }
+	.logo {
+		width: 130px;
+		height: auto;
+	}
 }
-
-

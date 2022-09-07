@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 /**
- * 
- * @param {string} url du fichier json des tables de logements 
+ *
+ * @param {string} url du fichier json des tables de logements
  * @returns locationList Table des logements
  * 					isLoading boolean d'indication de chargement en cours ou terminé
  * 					error boolean d'indication d'erreur de lecture des données
@@ -14,7 +14,7 @@ export function useFetch(url) {
 
 	useEffect(() => {
 		if (!url) return;
-  
+
 		async function fetchData() {
 			try {
 				const response = await fetch(url);

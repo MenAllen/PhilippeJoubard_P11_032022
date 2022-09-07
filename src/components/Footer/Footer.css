@@ -1,33 +1,35 @@
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 209px;
-  background-color: black;
-  color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 209px;
+	background-color: black;
+	color: white;
 }
 
 footer img {
-  width: 122px;
-  height: 40px;
-  margin-top: 30px;
+	width: 122px;
+	height: 40px;
+	margin-top: 30px;
 }
 
 footer p {
-  font-size: 24px;
-  font-weight: 500;
-  padding-top: 25px;
+	font-size: 24px;
+	font-weight: 500;
+	padding-top: 25px;
 }
 
 /* =========================================================================================== */
 @media screen and (max-width: 780px) {
+	footer p {
+		font-size: 12px;
+		padding-top: 10px;
+	}
 
-  footer p {
-    font-size: 12px;
-    padding-top: 10px;
-  }
-  
+	footer img {
+		margin-top: 15px;
+	}
 }

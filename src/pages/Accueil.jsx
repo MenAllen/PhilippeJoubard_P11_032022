@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Banner from "../components/Banner/Banner";
 import Card from "../components/Card/Card";
 import { useFetch } from "../utils/hooks";
+import { LoaderWrapper, Loader } from "../utils/style/Atoms";
 
 /* Définition du style du className LocationContainer */
 const LocationContainer = styled.div`
@@ -16,12 +17,12 @@ const LocationContainer = styled.div`
 	margin: 40px 7%;
 	width: 86%;
 
-  @media screen and (max-width: 780px) {
+	@media screen and (max-width: 780px) {
 		margin: 20px 7%;
-    padding: 0;
-    background-color: #ffffff;
-  }
-`
+		padding: 0;
+		background-color: #ffffff;
+	}
+`;
 
 /**
  *
@@ -34,18 +35,23 @@ function Accueil() {
 		return <span>Oups il y a eu un problème</span>;
 	}
 
-	if (!isLoading) {
-		return (
-			<React.Fragment>
-				<Banner page="Accueil" texte="Chez vous, partout et ailleurs" />
-				<LocationContainer>
-					{locationList.map((location) => (
-						<Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
-					))}
-				</LocationContainer>
-			</React.Fragment>
-		);
-	}
+	return isLoading ? (
+		<React.Fragment>
+			<Banner page="Accueil" texte="Chez vous, partout et ailleurs" />
+			<LoaderWrapper>
+				<Loader />
+			</LoaderWrapper>
+		</React.Fragment>
+	) : (
+		<React.Fragment>
+			<Banner page="Accueil" texte="Chez vous, partout et ailleurs" />
+			<LocationContainer>
+				{locationList.map((location) => (
+					<Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
+				))}
+			</LocationContainer>
+		</React.Fragment>
+	);
 }
 
 export default Accueil;

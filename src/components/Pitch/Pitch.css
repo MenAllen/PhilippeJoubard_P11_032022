@@ -1,135 +1,132 @@
 .pitch-container {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-radius: 25px;
-  margin: 40px 7%;
-  width: 86%;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-radius: 25px;
+	margin: 40px 7%;
+	width: 86%;
 }
 
 .caracteristics {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 15px;
 }
 
 .caracteristics h1 {
-  font-size: 36px;
-  font-weight: 500;
-  margin: 0;
+	font-size: 36px;
+	font-weight: 500;
+	margin: 0;
 }
 
 .caracteristics p {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 10px 0;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
 }
 
 .tagsList {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
 }
 
 .tagsList p {
-  background-color: #FF6060;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  align-self: center;
-  font-size: 14px;
-  font-weight: 500;
-  min-width: 115px;
-  padding: 5px 10px;
-  margin: 0 5px 5px 0;
+	background-color: #ff6060;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	align-self: center;
+	font-size: 14px;
+	font-weight: 500;
+	min-width: 115px;
+	padding: 5px 10px;
+	margin: 0 5px 5px 0;
 }
 
 .owner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .profil {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .profil p {
-  font-size: 18px;
-  font-weight: 500;
-  align-self: center;
-  max-width: 50px;
-  margin: 0;
+	font-size: 18px;
+	font-weight: 500;
+	align-self: center;
+	max-width: 50px;
+	margin: 0;
 }
 
 .profil img {
-  border-radius: 50%;
-  width: 64px;
-  height: auto;
+	border-radius: 50%;
+	width: 64px;
+	height: auto;
 }
 
 .rating {
-  display:flex;
-  flex-direction: row;
-  column-gap: 5px;
-  margin-top: 30px;
-  min-width: 200px;
+	display: flex;
+	flex-direction: row;
+	column-gap: 5px;
+	margin-top: 30px;
+	min-width: 200px;
 }
 
 /* =========================================================================================== */
 @media screen and (max-width: 780px) {
+	.pitch-container {
+		margin: 20px 7%;
+		row-gap: 5px;
+		flex-wrap: wrap;
+	}
 
-  .pitch-container {
-    margin: 20px 7%;
-    row-gap: 5px;
-    flex-wrap: wrap;
-  }  
+	.caracteristics h1 {
+		font-size: 18px;
+	}
 
-  .caracteristics h1 {
-    font-size: 18px;
-  }
+	.caracteristics p {
+		font-size: 14px;
+	}
 
-  .caracteristics p {
-    font-size: 14px;
-  }
+	.tagsList {
+		margin-top: 0;
+	}
 
-  .tagsList {
-    margin-top: 0;
-  }
+	.tagsList p {
+		font-size: 10px;
+		min-width: 80px;
+	}
 
-  .tagsList p {
-    font-size: 10px;
-    min-width: 80px;
-  }
+	.owner {
+		flex-direction: row-reverse;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-  .owner {
-    flex-direction: row-reverse;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
+	.rating {
+		margin-top: 0;
+	}
 
-  .rating {
-    margin-top: 0;
-  }
+	.rating img {
+		width: 15px;
+	}
 
-  .rating img {
-    width: 15px;
-  }
+	.profil p {
+		font-size: 12px;
+		margin-right: 10px;
+	}
 
-  .profil p {
-    font-size: 12px;
-    margin-right: 10px;
-  }
-
-  .profil img {
-    width: 32px;
-    height: 32px;
-  }
-
+	.profil img {
+		width: 32px;
+		height: 32px;
+	}
 }
-
