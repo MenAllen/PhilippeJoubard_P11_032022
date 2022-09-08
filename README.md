@@ -27,6 +27,3 @@ Une page netlify est disponible sous : https://stellular-marshmallow-ca39e0.netl
  - Prettier Code formateur
  - Styled-Components
  - P42 code analyseur et amelioreur
-
-## Livraisons
- - Livraison 12: Suppression des fichiers non utilisés

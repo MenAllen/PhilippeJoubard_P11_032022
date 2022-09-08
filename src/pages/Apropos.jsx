@@ -10,10 +10,10 @@ const AproposContainer = styled.div`
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
-	margin: 0 55px 60px 55px;
+  margin: 0 55px 200px 55px;
 
 	@media screen and (max-width: 780px) {
-		margin: 0 0 40px 0;
+		margin: 0 0 150px 0;
 	}
 `;
 
